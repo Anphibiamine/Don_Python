@@ -22,4 +22,4 @@ elif opcion == 2:
 elif opcion == 3:
     mesj("pezones argelianos", 250)
 else:
-    print("Ese botón no es parte de las opciones")    
+    print("Ese botón no es parte de las opciones")
