@@ -1,3 +1,12 @@
+def mesj(num, cambio):
+    pesosm = input("¿Cuánto varo tiene en " + num + "?  ")
+    pesosm = float(pesosm)
+    dolarvalor= float(cambio)
+    dolarucos = pesosm / dolarvalor
+    dolarucos = str(round(dolarucos, 2))
+    print("Usté cuenta con $" + dolarucos + " dolarucos.")
+
+
 menu = '''
 Elige campión:
 
@@ -7,22 +16,10 @@ Elige campión:
 '''
 opcion = int(input(menu))
 if opcion == 1:
-    pesosm = float(input("¿Cuánto varo tiene en Pesos Mexicanos?  "))
-    dolarvalor = 25.50
-    dolarucos = pesosm / dolarvalor
-    dolarucos = round(dolarucos, 2)
-    print("Usté cuenta con un total de " + str(dolarucos)3 +" dolarucos.")
+    mesj("pezones mexicanos", 25)
 elif opcion == 2:
-    pesosm = float(input("¿Cuánto varo tiene en Pokeyenes?  "))
-    dolarvalor = 50
-    dolarucos = pesosm / dolarvalor
-    dolarucos = round(dolarucos, 2)
-    print("Usté cuenta con un total de " +str(dolarucos) +" dolarucos.")
+    mesj("poke Yenes", 10)
 elif opcion == 3:
-    pesosm = float(input("¿Cuánto varo tiene en Pesos Argelianos?  "))
-    dolarvalor = 2550.20
-    dolarucos = pesosm / dolarvalor
-    dolarucos = round(dolarucos, 2)
-    print("Usté cuenta con un total de " +str(dolarucos) +" dolarucos.")
+    mesj("pezones argelianos", 250)
 else:
     print("Ese botón no es parte de las opciones")    
