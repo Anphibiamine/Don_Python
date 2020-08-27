@@ -10,6 +10,7 @@ def run():
     contra = ''.join(contrasenia)
     print(contra)
     
+    
 
 if __name__ == '__main__':
     run()
